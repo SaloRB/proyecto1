@@ -1,5 +1,6 @@
-<? php
-require 'lib/errores.php'
+<?php
+session_start();
+?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -65,7 +66,11 @@ require 'lib/errores.php'
                     <li><a href="reloj.php">Reloj</a></li>
                     <li><a href="about.php">Sobre mi</a></li>
                     <li><a href="contact.php">Contacto</a></li>
-                    <li><a href="login.php">Login</a></li>
+                    <?php if($_SESSION['ok']) : ?>
+                        <li><a href="admin.php">Admin</a></li>
+                    <?php else : ?>
+                        <li><a href="login.php">Login</a></li>
+                    <?php endif; ?>
                 </ul>
             </nav>
         </header>

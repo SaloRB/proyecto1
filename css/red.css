@@ -3,7 +3,7 @@ body {
     background-attachment: fixed;
 }
 
-#logo, #menu ul li:hover, .button-more, .form-error, #login button, #register button {
+#logo, #menu ul li:hover, .button-more, .form-error, #login button, #register button, #logout button {
     background: #ca3413;
 }
 
