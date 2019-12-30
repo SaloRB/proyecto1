@@ -1,0 +1,22 @@
+body {
+    background: url(../img/hojas.jpg);
+    background-attachment: fixed;
+}
+
+#logo, #menu ul li:hover, .button-more, .form-error, #login button, #register button {
+    background: #235e3d;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    border: 1px solid #002b0a !important;
+    background: #235e3d !important;
+}
+
+#reloj {
+    color: #235e3d;
+    border: 5px dashed #002b0a;
+}
+
+#login a {
+    color: #235e3d;
+}
