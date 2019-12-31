@@ -11,7 +11,7 @@ if (!$_SESSION['ok']) {
     <form action="" method="POST" role="form">
         <div class="form-group">
             <label for="title">Titulo</label>
-            <input type="text" class="form-control" id="title">
+            <input name="title" type="text" class="form-control" id="title">
         </div>
 
         <div class="form-group">

@@ -37,7 +37,7 @@
                 <h2>$title</h2>
                 <span class='date'>Published on $date</span>
                 <p>$content</p>
-                <a class='button-more' href='#'>Leer mas</a>
+                <a class='btn btn-primary btn-lg' href='#'>Leer mas</a>
             </article>
             ";
     }

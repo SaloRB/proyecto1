@@ -68,7 +68,7 @@ date_default_timezone_set('America/Mexico_City');
                     <li><a href="reloj.php">Reloj</a></li>
                     <li><a href="about.php">Sobre mi</a></li>
                     <li><a href="contact.php">Contacto</a></li>
-                    <?php if($_SESSION['ok']) : ?>
+                    <?php if(isset($_SESSION['user_id'])) : ?>
                         <li><a href="admin.php">Admin</a></li>
                     <?php else : ?>
                         <li><a href="login.php">Login</a></li>
