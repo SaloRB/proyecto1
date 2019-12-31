@@ -1,6 +1,6 @@
 <?php require 'inc/header.inc'; ?>
 
-<div id="box">
+<div class="box">
     <!-- Cargar formulario -->
     <h2>Contacto</h2>
     <form action="" method="POST" id="form_contact">

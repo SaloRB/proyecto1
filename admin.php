@@ -23,10 +23,13 @@ spl_autoload_register(function ($clase) {
 
 $db = new Database(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 
+$user_id = $_SESSION['user_id'];
+
 $db->preparar("SELECT 
                 title,
                 date
                FROM posts
+               WHERE author = $user_id
                ORDER BY date");
 $db->ejecutar();
 $db->prep()->bind_result($title, $date);

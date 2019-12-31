@@ -22,9 +22,9 @@
 
     $db = new Database(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 
-    $db->preparar("SELECT * FROM posts ORDER BY date");
+    $db->preparar("SELECT p.title, p.content, p.date, CONCAT(u.first_name, ' ', u.last_name) FROM posts p JOIN usuarios u ON p.author = u.id");
     $db->ejecutar();
-    $db->prep()->bind_result($id_post, $author, $title, $content, $date);
+    $db->prep()->bind_result($title, $content, $date, $author);
 
     $conteo = 0;
     while ($db->resultado()) {
@@ -35,7 +35,7 @@
         echo "
             <article class='post'>
                 <h2>$title</h2>
-                <span class='date'>Published on $date</span>
+                <span class='date'>Published on $date by $author</span>
                 <p>$content</p>
                 <a class='btn btn-primary btn-lg' href='#'>Leer mas</a>
             </article>
