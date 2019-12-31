@@ -250,11 +250,11 @@ footer {
     margin-bottom: 20px;
 }
 
-#login input, #register input {
+#login input, #register input, #create input {
     width: 300px;
 }
 
-#login button, #register button, #logout button {
+#login button, #register button, #logout button, #create button {
     color: #FFFFFF;
     padding: 10px;
     margin-top: 5px;
@@ -265,4 +265,14 @@ footer {
     font-family: "Helvetica", "Arial";
     text-decoration: none;
     font-size: 14px;
+}
+
+#user_posts {
+    margin-top: 20px;
+}
+
+#create textarea {
+    font-family: "Helvetica", "Arial";
+    width: 310px;
+    height: 300px;
 }

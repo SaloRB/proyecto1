@@ -3,11 +3,11 @@ body {
     background-attachment: fixed;
 }
 
-#logo, #menu ul li:hover, .button-more, .form-error, #login button, #register button, #logout button {
+#logo, #menu ul li:hover, .button-more, .form-error, #login button, #register button, #logout button, #create button {
     background: #235e3d;
 }
 
-.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover, .ui-state-focus {
     border: 1px solid #002b0a !important;
     background: #235e3d !important;
 }
@@ -19,4 +19,28 @@ body {
 
 #login a {
     color: #235e3d;
+}
+
+.btn-primary {
+    background-color: #235e3d;
+    border-color: #235e3d;
+}
+
+.btn-primary:hover {
+    border-color: #002b0a;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    background-color: #235e3d;
+    border-color: #002b0a;
+    box-shadow: 0 0 0 .2rem rgba(0, 43, 10, .5)
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show>.btn-primary.dropdown-toggle {
+    background-color: #235e3d;
+    border-color: #002b0a;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .2rem rgba(0, 43, 10, .5)
 }

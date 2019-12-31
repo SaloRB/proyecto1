@@ -2,7 +2,7 @@
     </section>
     
     <footer>
-        Master de JavaScript de Victor Robles &copy;
+        Salomon Romano
 
         <a href="#" class="subir">Ir arriba</a>
     </footer>

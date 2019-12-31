@@ -26,13 +26,15 @@
             $db = new Database(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 
             if (preg_match(EMAIL_REGEX, $email)) {
-                $db->preparar("SELECT email, password FROM usuarios WHERE email = '$email'");
+                $db->preparar("SELECT id, email, password FROM usuarios WHERE email = '$email'");
                 $db->ejecutar();
-                $db->prep()->bind_result($dbemail, $dbpassword);
+                $db->prep()->bind_result($user_id, $dbemail, $dbpassword);
                 $db->resultado();
+                $db->liberar();
 
                 if ($password == $dbpassword && $email == $dbemail) {
                     $_SESSION['ok'] = true;
+                    $_SESSION['user_id'] = $user_id;
                 } else {
                     trigger_error("Usuario o password incorrectos", E_USER_ERROR);
                 }

@@ -39,16 +39,16 @@ $(document).ready(function () {
         },
     ]
 
-    posts.forEach((item) => {
-        var post = `
-            <article class="post">
-                <h2>${item.title}</h2>
-                <span class="date">${item.date}</span>
-                <p>${item.content}</p>
-                <a class="button-more" href="#">Leer mas</a>
-            </article>        
-        `;
+    // posts.forEach((item) => {
+    //     var post = `
+    //         <article class="post">
+    //             <h2>${item.title}</h2>
+    //             <span class="date">${item.date}</span>
+    //             <p>${item.content}</p>
+    //             <a class="button-more" href="#">Leer mas</a>
+    //         </article>        
+    //     `;
 
-        $("#posts").append(post);
-    });
+    //     $("#posts").append(post);
+    // });
 });
